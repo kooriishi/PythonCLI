@@ -1,0 +1,4 @@
+llama-cpp-python==0.2.85
+colorama==0.4.6
+psutil==5.9.8
+aiohttp==3.9.1
