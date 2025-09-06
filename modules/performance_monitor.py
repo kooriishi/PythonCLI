@@ -22,16 +22,16 @@ except ImportError as e:
 @dataclass
 class PerformanceMetrics:
     """性能指标数据结构"""
-    cpu_percent: float = 0.0
-    memory_percent: float = 0.0
-    memory_used_gb: float = 0.0
-    gpu_percent: float = 0.0
-    gpu_memory_used_gb: float = 0.0
-    total_requests: int = 0
-    active_requests: int = 0
-    avg_response_time: float = 0.0
-    tokens_per_second: float = 0.0
-    uptime_seconds: float = 0.0
+    cpu_percent: float = 0.0            # CPU使用率
+    memory_percent: float = 0.0         # 内存使用率
+    memory_used_gb: float = 0.0         # 已使用的内存数GB
+    gpu_percent: float = 0.0            # GPU使用率
+    gpu_memory_used_gb: float = 0.0     # GPU显存使用量
+    total_requests: int = 0             # 累计请求总数
+    active_requests: int = 0            # 当前并发请求数量
+    avg_response_time: float = 0.0      # 平均响应时间，近1000次
+    tokens_per_second: float = 0.0      # 每秒生成token数量
+    uptime_seconds: float = 0.0         # 系统运行时间
 
 
 class PerformanceMonitor:
